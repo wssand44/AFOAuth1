@@ -1,11 +1,21 @@
 # AFOAuth1
 
-[![Version](http://cocoapod-badges.herokuapp.com/v/AFOAuth1/badge.png)](http://cocoadocs.org/docsets/AFOAuth1)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/AFOAuth1/badge.png)](http://cocoadocs.org/docsets/AFOAuth1)
+[![Version 0.0.1]
+[![Platform iOS7]
 
 ## Usage
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
+
+KDHTTPRequestSerializer *reqSerializer = [KDHTTPRequestSerializer serializer];
+        [reqSerializer setUseOAuth:YES];
+        self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+        self.manager.requestSerializer = reqSerializer;
+        [self.manager POST:@"http:/example/oauth/access_token" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+            NSLog(@"%@", responseObject);
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            NSLog(@"%@", error);
+        }];
 
 ## Requirements
 
@@ -14,7 +24,7 @@ To run the example project; clone the repo, and run `pod install` from the Examp
 AFOAuth1 is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
-    pod "AFOAuth1"
+    pod "AFOAuth1", '~>0.0.1'
 
 ## Author
 
