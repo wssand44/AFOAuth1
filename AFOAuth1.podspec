@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AFOAuth1"
-  s.version      = "0.0.1"
+  s.version      = "]0.0.1"
   s.summary      = "OAuth1 based on AFNetworking 2.2.0."
   s.description  = <<-DESC
                    OAuth1 based on AFNetworking 2.2.0.
