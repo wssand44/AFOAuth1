@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
 
   #  When using multiple platforms
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '7.0'
   # s.osx.deployment_target = '10.7'
 
 
@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/wssand44/AFOAuth1.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/wssand44/AFOAuth1.git", :tag => "0.0.1"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
