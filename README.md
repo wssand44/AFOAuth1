@@ -7,7 +7,7 @@
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
 
-KDHTTPRequestSerializer *reqSerializer = [KDHTTPRequestSerializer serializer];
+        KDHTTPRequestSerializer *reqSerializer = [KDHTTPRequestSerializer serializer];
         [reqSerializer setUseOAuth:YES];
         self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
         self.manager.requestSerializer = reqSerializer;
